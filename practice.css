@@ -1,0 +1,51 @@
+.form-container {
+  width: 100%
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: pink;
+}
+
+.left-side {
+  display: flex;
+  width: 50%;
+  height: 600px;
+}
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+  border: 2px solid blue
+}
+
+.form-one, .form-two {
+  width: 45%;
+  height: 200px;
+  display: flex;
+  border: 2px solid yellow;
+}
+
+.form-two {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.checklist {
+  background-color: purple;
+  width: 50%;
+  height: 100px;
+}
+.form-submit {
+  width: 50%;
+  height: 100px;
+  background-color: green;
+}
+
+.right-side {
+  display: flex;
+  width: 50%;
+  height: 600px;
+  border: 2px solid purple;
+}
