@@ -133,8 +133,22 @@ h3 {
 h4 {
   font-family: 'Josefin Slab', serif;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #3f5170
+}
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: .75rem;
+  font-weight: 400;
+  color: #3f5170;
+}
+
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: .5rem;
+  font-weight: 400;
+  font-style: italic;
 }
 
 main p{
@@ -236,29 +250,64 @@ div.gallery-wrapper {
   border: 3px solid #899ba3;
   border-radius: 35px;
   width: 90%;
-  margin: 2rem auto;
-  padding: 2rem 0;
+  margin: 1rem auto;
+  padding: 1rem 0;
 }
 
 .gallery-row {
   display: flex;
+  width: 100%;
   justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0;
 }
-
-div.gallery-wrapper img {
+.gallery-pocket {
   width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.gallery-pocket img {
+  width: 100%;
   height: 100%;
   object-fit:cover;
-
-background-color: white;
-  padding: 0px;
+  background-color: white;
+  padding: .5rem;
   margin: .5rem;
+}
+
+
+
+.hover-title {
+position: absolute;
+float:left;
+background-color: white;
+text-align: center;
+margin-top: 12rem;
+padding: .5rem 1rem;
+border-radius: .3rem;
+z-index: 99;
+display: none;
+}
+
+.all-rights {
+font-style: italic;
+font-size: .5rem;
+text-align: center;
 }
 
 .gallery-wrapper img:hover {
     transform: scale(1.5);
     box-shadow: .35rem .35rem .65rem rgba(63, 81, 112, .5);
   }
+  .gallery-wrapper img:hover + .hover-title {
+      display: block;
+  }
+  .gallery-wrapper img:hover + .rights {
+      display: block;
+  }
+
 
 div.shop-wrapper {
   width: 80%;
