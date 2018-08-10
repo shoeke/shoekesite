@@ -7,12 +7,10 @@ html, body {
   font-family:'Josefin Slab', serif;
   font-weight: 400;
   font-size: 16pt;
-  line-height: normal;
   color: #3f5170;
   height: 100%;
   margin: 0;
 }
-
 
 .wrapper {
   background-image: url("../images/BGgridArtboard 1 copy@0.4x.jpg");
@@ -42,7 +40,7 @@ main {
   top: 35px;
   margin-left: 50px;
 }
-
+/*-----------HEADER---------------------*/
 header {
   background-image: url("../images/header-03.png");
   background-repeat: no-repeat;
@@ -109,113 +107,7 @@ ul.dropdown:hover {
   display: block !important;
 }
 
-h1, h2, h3 {
-  font-family:'Amatic SC', cursive;
-  text-align: center;
-}
-
-h1 {
-  font-size: 3rem;
-  color: #3f5170;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #eb8f2b
-}
-
-h3 {
-  font-size: 2rem;
-  color: #3f5170;
-  margin-top: 1rem;
-}
-
-h4 {
-  font-family: 'Josefin Slab', serif;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #3f5170
-}
-
-h5 {
-  font-family: "Open Sans", sans-serif;
-  font-size: .75rem;
-  font-weight: 600;
-  color: #3f5170;
-}
-
-h6 {
-  font-family: "Open Sans", sans-serif;
-  font-size: .5rem;
-  font-weight: 400;
-  font-style: italic;
-}
-
-main p{
-  width: 50%;
-  margin: .5rem auto 1.25rem auto;
-  line-height: 1.5rem;
-}
-
-div .placeholder-image {
-  width: 848px;
-  height: 400px;
-  background-color: white;
-  border: 3px solid #899ba3;
-  border-radius: 35px;
-  margin: 0 auto 4rem auto;
-  display: flex;
-  justify-content: center;
-  top: 30px;
-}
-.slide-container {
-  display: flex;
-  align-items: center;
-}
-
-.mySlides img {
-  width: 570px
-  height: 360px;
-}
-
-.placeholder-image {
-  display: flex;
-}
-
-.slideControl {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
-  z-index: 10;
-}
-
-
-
-.placeholder-image img{
-  width: 570px;
-  height: 368px;
-  background-color: white;
-}
-
-button:focus {
-  outline: none;
-}
-
-
-.slideControl img, button{
-  background-color: white;
-  width: 80px;
-  height: 80px;
-  border: none;
-  margin:0;
-}
-
-.right-arrow img{
-  transform: scale(-1, 1);
-}
-
+/*----------------- FOOTER----------------------*/
 .sunshine {
   background-image: url("../images/sunshine-border.png");
   position: absolute;
@@ -270,7 +162,114 @@ footer {
 q {
   font-style: italic;
 }
+/*---------------GLOBAL HEADINGS----------------*/
+h1, h2, h3 {
+  font-family:'Amatic SC', cursive;
+  text-align: center;
+}
 
+h1 {
+  font-size: 3rem;
+  color: #3f5170;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #eb8f2b
+}
+
+h3 {
+  font-size: 2rem;
+  color: #3f5170;
+  margin-top: 1rem;
+}
+
+h4 {
+  font-family: 'Josefin Slab', serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #3f5170
+}
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: .75rem;
+  font-weight: 600;
+  color: #3f5170;
+}
+
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: .5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*--------------HOME PAGE --------------------*/
+main p{
+  width: 50%;
+  margin: .5rem auto 1.25rem auto;
+  line-height: 1.25rem;
+}
+
+div .placeholder-image {
+  width: 848px;
+  height: 400px;
+  background-color: white;
+  border: 3px solid #899ba3;
+  border-radius: 35px;
+  margin: 0 auto 4rem auto;
+  display: flex;
+  justify-content: center;
+  top: 30px;
+}
+.slide-container {
+  display: flex;
+  align-items: center;
+}
+
+.mySlides img {
+  width: 570px
+  height: 360px;
+}
+
+.placeholder-image {
+  display: flex;
+}
+
+.slideControl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.placeholder-image img{
+  width: 570px;
+  height: 368px;
+  background-color: white;
+}
+
+button:focus {
+  outline: none;
+}
+
+.slideControl img, button{
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border: none;
+  margin:0;
+}
+
+.right-arrow img{
+  transform: scale(-1, 1);
+}
+
+/*------------PORTFOLIO PAGES------------------*/
 div.gallery-wrapper {
   display: flex;
   flex-direction: column;
@@ -305,8 +304,6 @@ div.gallery-wrapper {
   margin: .5rem;
 }
 
-
-
 .hover-title {
 position: absolute;
 float:left;
@@ -329,11 +326,11 @@ text-align: center;
     transform: scale(1.5);
     box-shadow: .35rem .35rem .65rem rgba(63, 81, 112, .5);
   }
-  .gallery-wrapper img:hover + .hover-title {
+.gallery-wrapper img:hover + .hover-title {
       display: block;
   }
 
-
+/*------------------ SHOP PAGE ---------------*/
 div.shop-wrapper {
   width: 80%;
   height: 1000px;
@@ -349,7 +346,6 @@ div.shop-wrapper {
   float: right;
   width: 35%;
   height: auto;
-
 }
 
 .shop-links a img{
@@ -362,12 +358,11 @@ div.shop-wrapper {
   width: 50%;
   text-align: center;
 }
-
+/*-----------FREEBIES PAGE ------------------*/
 #wallpaper-6 {
   padding-bottom: .5rem;
   border-bottom: .1rem solid #eb8f2b;
 }
-
 
 .grid {
   display: grid;
@@ -440,7 +435,6 @@ form {
   justify-content: flex-start;
 }
 
-
 .checklist {
   width: 100%;
   height: auto;
@@ -448,8 +442,6 @@ form {
   font-weight: 600;
   font-size: .85rem;
 }
-
-
 
 .form-submit {
   width: 100%;
@@ -461,14 +453,19 @@ form {
 }
 
 input {
-  height: 2rem;
+  height: 1.25rem;
 }
 input[type=image] {
 width: 162px;
 height: 60px;
 }
+input[type=image]:focus {
+  outline: none;
+}
+
 input[type=text] {
   font-size: 1rem;
+  padding: 1rem;
 }
 
 label {
@@ -492,8 +489,6 @@ input[type=checkbox] {
   border-bottom: 1px solid black;
 }
 
-
-
 .checklist label {
 display: inline-block;
 }
@@ -505,6 +500,7 @@ display: inline-block;
 }
 
 .right-side p {
+  width: 75%;
   padding: 2rem;
   margin: 0;
 }
@@ -513,32 +509,44 @@ display: inline-block;
   font-weight: 600;
 }
 
+
+/*-----------ABOUT ME PAGE--------------------*/
+
 .me-container {
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
 }
 
-.me-container img {
-
+.image-holder, .me-about {
+  display: flex;
   width: 50%;
-  padding:  1rem 4rem;
-  border-right: .1rem solid #eb8f2b;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-holder img {
+  width: 75%;
+  padding: 2rem;
+  border: 2px solid #899BA3;
+  border-radius: 25px;
 }
 
 .me-about {
-  width: 50%;
-  padding: 1rem 2rem 0 4rem;
-  display: block;
-  float: right;
+  border-left: 3px solid #EB8F2B;
 }
 
 .me-about p {
   width: 100%;
   margin: 0;
+  padding: 1rem 1rem 1rem 2rem;
 }
 
-
-
-
+/*-----------LINKS PAGE-----------------------*/
+.link-category {
+  margin-bottom: 2rem;
+}
 
 .grid-container {
   width: 80%;
@@ -551,19 +559,16 @@ display: inline-block;
   font-size: .60rem;
   border-bottom: 4px solid #ccba12;
 }
-.link-category {
-  margin-bottom: 2rem;
+
+.grid-container:first-child {
+  border-top: 4px solid #ccba12;
 }
+
 .grid-item {
   width: 100%;
-  min-height: 5rem;
   margin: .5rem;
 }
 
-.grid-item .pic {
-
-
-}
 .empty-div {
   width: 100%;
   min-height: 5rem;
@@ -608,7 +613,7 @@ display: inline-block;
   background-image: url("../images/link-logos/sf.png");
 }
 
-.name p {
+.name p, .name a {
   width: inherit;
   margin: inherit;
 font-size: .8rem;
@@ -616,11 +621,14 @@ line-height: 1.25rem;
 font-weight: 600;
 height: 100%;
 text-align: center;
+text-decoration: none;
+color: #3F5170;
 }
 
 .about p {
   width: 90%;
-  margin: 0;
+  height: auto;
+  margin: inherit;
   padding: 0;
   line-height: .85rem;
 }
