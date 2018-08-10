@@ -91,7 +91,7 @@
               <input type="text" id="lname" name="Last_Name" placeholder="Your last name.."><br>
 
               <label for="WhereAreYou">Where are you?</label>
-              <select id="WhereAreYou" name="WhereAreYou">
+              <select id="whereAreYou" name="WhereAreYou">
                 <option value="USA">USA</option>
                 <option value="canada">Canada</option>
                 <option value="UK">UK</option>
@@ -108,13 +108,19 @@
               <input type="text" id="email" name="email" placeholder="Your email.."><br>
         </div>
         <div class="form-two">
-          <span>Choose Up to 3</span><br>
+          <label>Choose Up to 3</label>
           <div class="checklist">
-            <input type="checkbox" name="biglove" value="biglove">Big Love<br>
-            <input type="checkbox" name="Calliope" value="Calliope">Calliope<br>
+
+            <input type="checkbox" name="bigLove" value="bigLove"> <label for="[bigLove]">Big Love</label><br>
+
+            <input type="checkbox" id="Calliope" value="Calliope">Caliope<br>
+
             <input type="checkbox" name="makeup" value="makeup">Makeup Party<br>
+
             <input type="checkbox" name="moth" value="moth">Moth Milieu<br>
+
             <input type="checkbox" name="strawberry" value="strawberry">Vintage Strawberry<br>
+
             <input type="checkbox" name="tap" value="tap">Toe Tappers<br>
           </div>
           <div class="form-submit">

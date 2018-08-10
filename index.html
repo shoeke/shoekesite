@@ -47,10 +47,61 @@
     <main>
       <h1>Welcome</h1>
       <div class="placeholder-image">
-        <img src="resources/images/arrow.png" alt="decorative arrow">
-        <img src="resources/images/placeholder-img.png" alt="placeholder image for javascript slideshow player">
-        <img src="resources/images/arrow.png" alt="decorative arrow">
+
+        <div class="slideControl">
+            <button class="arrow"   onclick="plusDivs(-1)"><img src="resources/images/arrow.png"  /></button>
+
+        </div>
+
+        <div class="slide-container">
+          <img class="mySlides" src="resources/images/slides/slide1.jpg" width=100%>
+          <img class="mySlides" src="resources/images/slides/slide2.jpg" >
+          <img class="mySlides" src="resources/images/slides/slide3.jpg" >
+          <img class="mySlides" src="resources/images/slides/slide4.jpg" >
+          <img class="mySlides" src="resources/images/slides/slide5.jpg" >
+          <img class="mySlides" src="resources/images/slides/slide6.jpg" >
+
+          <img class="mySlides" src="resources/images/slides/slide7.jpg" width=100%>
+          <img class="mySlides" src="resources/images/slides/slide8.jpg" >
+          <img class="mySlides" src="resources/images/slides/slide9.jpg" >
+          <img class="mySlides" src="resources/images/slides/slide10.jpg" >
+          <img class="mySlides" src="resources/images/slides/slide11.jpg" >
+          <img class="mySlides" src="resources/images/slides/slide12.jpg" >
+        </div>
+
+
+      <div class="slideControl right-arrow">
+          <button class="arrow" onclick="plusDivs(1)"><img src="resources/images/arrow.png"  /></button>
       </div>
+
+      </div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+
+
+
+
+<!-- END SLIDESHOW TEST-->
 
       <p class = "text-settings" >Hello! I'm so happy you're here. I am an illustrator and surface pattern designer with an interest in using technology in conjuncture with hand drawn art. I love finding ways to keep the wonkiness and authenticity of a sketch or ink drawing, with the  varied options using Adobe Illustrator and Photoshop. You can see a love me a bright, happy color and keep things upbeat. I've also taken a recent interest in modern (meaning tech based) graphic design. I am an education junkie meaning I love to learn new things and I've taken more online classes than I can count. Hope you enjoy poking around!</p>
 
