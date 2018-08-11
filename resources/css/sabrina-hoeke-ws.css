@@ -367,6 +367,25 @@ div.shop-wrapper {
   width: 50%;
   text-align: center;
 }
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: .5rem;
+    min-width: 10%;
+    max-width: 70%;
+}
+
+th    {
+  font-weight: 600;
+  background-color: #b8c3c8;
+  white-space: nowrap;
+}
 /*-----------FREEBIES PAGE ------------------*/
 #wallpaper-6 {
   padding-bottom: .5rem;
@@ -488,6 +507,7 @@ select {
   height: 2rem;
   font-size: 1rem;
 }
+
 input[type=checkbox] {
   vertical-align: bottom;
   -ms-transform: scale(2); /* IE */
@@ -498,6 +518,14 @@ input[type=checkbox] {
   margin-top:15px;
   border-bottom: 1px solid black;
 }
+input[name=newsletter]{
+  -ms-transform: scale(1.2); /* IE */
+  -moz-transform: scale(1.2); /* FF */
+  -o-transform: scale(1.2); /* Opera */
+    float: left;
+}
+
+
 
 .checklist label {
 display: inline-block;
