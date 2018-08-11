@@ -674,5 +674,7 @@ color: #3F5170;
  .grid {
    display: -ms-flexbox;
  }
-
+ input[type=text], input[type=email] {
+   padding: .25rem;
+ }
  }
