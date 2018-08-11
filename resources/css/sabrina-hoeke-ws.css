@@ -286,6 +286,9 @@ div.gallery-wrapper {
 }
 .gallery-pocket {
   width: 30%;
+
+  height: 30%;
+
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -391,7 +394,10 @@ th    {
 }
 
 .grid {
+
+  display: -ms-flexbox;
   display: grid;
+
   height: auto;
   width: 100%;
   grid-template-columns: repeat(6, 1fr);
@@ -490,8 +496,8 @@ outline: none;
 }
 
 input[type=text], input[type=email] {
-  font-size: 1rem;
-  padding: .75rem;
+  font-size: .75rem;
+  padding: .25rem;
 }
 
 label {
@@ -665,22 +671,3 @@ color: #3F5170;
   padding: 0;
   line-height: .85rem;
 }
-/*---------- QUERY TO TACKLE IE ISSUES------------*/
-
-@@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
- .gallery-pocket {
-   height:30%;
- }
- .grid {
-   display: -ms-flexbox;
- }
- input[type=text], input[type=email] {
-   padding: .25rem;
- }
-.gallery-pocket img {
-  display:none;
-}
-.gallery-pocket {
-  background-image: url("resources/images/gd-6.jpg");
-}
- }
