@@ -8,21 +8,22 @@ html, body {
   font-weight: 400;
   font-size: 16pt;
   color: #3f5170;
-  height: 100%;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .wrapper {
   background-image: url("../images/BGgridArtboard 1 copy@0.4x.jpg");
-  width: 1280px;
-  height: 100%;
-  position: absolute;
+  max-width: 1280px;
+  height: auto;
   top: 125px;
-  overflow: auto;
   margin: 0 auto;
   padding: 100px 0;
   overflow-y: scroll;
   overflow-x: hidden;
+  min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -201px; /* the bottom margin is the negative value of the footer's height */
 }
 
 main {
@@ -30,8 +31,8 @@ main {
   width: 90%;
   height: auto;
   margin: 0 auto;
+  top: 150px;
   padding-bottom: 50px;
-
 }
 
 .logo-holder {
@@ -41,6 +42,8 @@ main {
   margin-left: 50px;
 }
 /*-----------HEADER---------------------*/
+
+
 header {
   background-image: url("../images/header-03.png");
   background-repeat: no-repeat;
@@ -58,7 +61,6 @@ nav ul {
   position: relative;
   top: 35px;
   margin-right: 20px;
-
 }
 
 nav ul li {
@@ -77,16 +79,17 @@ nav ul li {
   font-size: 1rem;
   font-weight: 600;
   color: #3f5170;
-
 }
 
 .buttons li a:link {
   color: #3f5170;
   text-decoration: none;
 }
+
 .buttons li a:hover {
   color: #eb8f2b;
 }
+
 .buttons li a:visited {
   color: #a39b24;
 }
@@ -108,16 +111,9 @@ ul.dropdown:hover {
 }
 
 /*----------------- FOOTER----------------------*/
-.sunshine {
-  background-image: url("../images/sunshine-border.png");
-  position: absolute;
-  bottom: 0;
-  z-index: 5;
-  width: 1244px;
-  height: 98px;
-}
-footer {
 
+
+footer {
   background-image: url("../images/footer-05.png");
   position: relative;
   bottom: 0;
@@ -133,12 +129,10 @@ footer {
   line-height: .5rem;
 }
 
-.fix-footer {
-
-}
 .push {
-  height: 201px;
+  height: 301px;
 }
+
 
 #copy-holder {
   display: flex;
@@ -227,6 +221,9 @@ div .placeholder-image {
 .slide-container {
   display: flex;
   align-items: center;
+  object-fit: cover;
+  border-right: 2px solid #899BA3;
+  border-left: 2px solid #899BA3;
 }
 
 .mySlides img {
@@ -244,7 +241,7 @@ div .placeholder-image {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  z-index: 10;
+
 }
 
 .placeholder-image img{
@@ -322,8 +319,12 @@ font-size: .5rem;
 text-align: center;
 }
 
+.gallery-wrapper img {
+    transition: transform .25s;
+}
 .gallery-wrapper img:hover {
     transform: scale(1.5);
+    -ms-transform: scale(1.5);
     box-shadow: .35rem .35rem .65rem rgba(63, 81, 112, .5);
   }
 .gallery-wrapper img:hover + .hover-title {
@@ -332,25 +333,33 @@ text-align: center;
 
 /*------------------ SHOP PAGE ---------------*/
 div.shop-wrapper {
-  width: 80%;
-  height: 1000px;
-  margin: 0 auto;
-  padding: 20px 50px;
-}
-
-#portfolio {
-  width: 50%;
-  float: left;
-}
-.shop-links {
-  float: right;
-  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
   height: auto;
+  margin: 0 auto;
 }
 
-.shop-links a img{
+.shop-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   height: auto;
+  object-fit: contain;
+  padding: .5rem 1rem;
+}
+
+.shop-links a {
+  width: 50%;
+  margin: 1rem;
+}
+
+.shop-links img{
+  width: 100%;
 }
 
 .reg-page {
