@@ -552,6 +552,9 @@ display: inline-block;
 /*-----------ABOUT ME PAGE--------------------*/
 
 .me-container {
+
+  display: -webkit-box;
+
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -559,7 +562,7 @@ display: inline-block;
 }
 
 .image-holder, .me-about {
-  display: flex;
+
   width: 50%;
   justify-content: center;
   align-items: center;
@@ -570,6 +573,7 @@ display: inline-block;
   padding: 2rem;
   border: 2px solid #899BA3;
   border-radius: 25px;
+  margin-top: 2rem;
 }
 
 .me-about {
