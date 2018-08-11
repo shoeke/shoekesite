@@ -268,13 +268,6 @@ button:focus {
 
 /*------------PORTFOLIO PAGES------------------*/
 div.gallery-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: white;
   border: 3px solid #899ba3;
   border-radius: 35px;
@@ -284,38 +277,23 @@ div.gallery-wrapper {
 }
 
 .gallery-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: center;
+  flex-direction: row;
   margin: 0 auto;
   padding: 0;
 }
 .gallery-pocket {
   width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: center;
+  flex-direction: row;
 }
 .gallery-pocket img {
   width: 100%;
   height: 100%;
-  -o-object-fit:contain;
-     object-fit:contain;
+  object-fit:contain;
   background-color: white;
   padding: .5rem;
   margin: .5rem;
@@ -340,22 +318,17 @@ text-align: center;
 }
 
 .gallery-wrapper img {
-    -webkit-transition: -webkit-transform .25s;
-    transition: -webkit-transform .25s;
-    -o-transition: transform .25s;
     transition: transform .25s;
-    transition: transform .25s, -webkit-transform .25s;
 }
 .gallery-wrapper img:hover {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
     -ms-transform: scale(1.5);
-    -webkit-box-shadow: .35rem .35rem .65rem rgba(63, 81, 112, .5);
-            box-shadow: .35rem .35rem .65rem rgba(63, 81, 112, .5);
+    box-shadow: .35rem .35rem .65rem rgba(63, 81, 112, .5);
   }
 .gallery-wrapper img:hover + .hover-title {
       display: block;
   }
+
 /*------------------ SHOP PAGE ---------------*/
 div.shop-wrapper {
   display: flex;
