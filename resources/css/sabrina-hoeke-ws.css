@@ -589,6 +589,9 @@ display: inline-block;
 
 .grid-container {
   width: 80%;
+
+  display: -ms-flexbox;
+
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-template-rows: repeat(3), 2rem;
