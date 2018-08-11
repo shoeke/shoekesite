@@ -219,7 +219,7 @@ div .placeholder-image {
   top: 30px;
 }
 .slide-container {
-  display: flex;
+  margin-top: .6rem;
   align-items: center;
   object-fit: cover;
   border-right: 2px solid #899BA3;
@@ -665,3 +665,14 @@ color: #3F5170;
   padding: 0;
   line-height: .85rem;
 }
+/*---------- QUERY TO TACKLE IE ISSUES------------*/
+
+@@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+ .gallery-pocket {
+   height:30%;
+ }
+ .grid {
+   display: -ms-flexbox;
+ }
+
+ }
