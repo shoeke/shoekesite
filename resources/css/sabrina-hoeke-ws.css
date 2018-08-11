@@ -21,9 +21,9 @@ html, body {
   overflow-y: scroll;
   overflow-x: hidden;
   min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -201px; /* the bottom margin is the negative value of the footer's height */
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -201px; /* the bottom margin is the negative value of the footer's height */
 }
 
 main {
@@ -227,7 +227,7 @@ div .placeholder-image {
 }
 
 .mySlides img {
-  width: 570px
+  width: 570px;
   height: 360px;
 }
 
@@ -324,8 +324,8 @@ text-align: center;
     transition: transform .25s;
 }
 .gallery-wrapper img:hover {
-    transform: scale(1.5);
     -ms-transform: scale(1.5);
+    transform: scale(1.5);
     box-shadow: .35rem .35rem .65rem rgba(63, 81, 112, .5);
   }
 .gallery-wrapper img:hover + .hover-title {
@@ -453,7 +453,7 @@ form {
   height: 100%;
   display: flex;
   flex-direction: row;
-    justify-content: space-between;
+  justify-content: space-between;
 }
 .form-one {
   font-size: .85rem;
@@ -594,7 +594,6 @@ display: inline-block;
 
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  grid-template-rows: repeat(3), 2rem;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
