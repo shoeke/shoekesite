@@ -677,4 +677,10 @@ color: #3F5170;
  input[type=text], input[type=email] {
    padding: .25rem;
  }
+.gallery-pocket img {
+  display:none;
+}
+.gallery-pocket {
+  background-image: url("resources/images/gd-6.jpg");
+}
  }
