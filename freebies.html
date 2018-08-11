@@ -85,7 +85,7 @@
 
   <div class="form-container">
     <div class="left-side">
-      <form class="request" action="mailto:sabrina.hoeke@yahoo.com" method="post">
+      <form class="request" name="joe" action="mailto:sabrina.hoeke@yahoo.com" method="post" enctype="text/plain">
 
         <div class="form-one">
           <label for="fname">First Name</label>
@@ -109,26 +109,29 @@
               </select><br>
 
               <label for="email">Email</label>
-              <input type="text" id="email" name="email" placeholder="Your email.."><br>
+              <input type="email" id="email" name="email" placeholder="punchy@babycakes.com"><br>
+
+              <input type="checkbox" name="newsletter" value="YES send me stuff occasionally">
+              <label for="[newsletter]">It's OK if you send me things occasionally through my email</label>
         </div>
         <div class="form-two">
           <label>Choose Up to 3</label>
           <div class="checklist">
 
-            <input type="checkbox" name="bigLove" value="bigLove"> <label for="[bigLove]">Big Love</label><br>
+            <input type="checkbox" name="bigLove" value="bigLove" onClick="return KeepCount()"> <label for="[bigLove]">Big Love</label><br>
 
-            <input type="checkbox" id="Calliope" value="Calliope">Caliope<br>
+            <input type="checkbox" name="Calliope" value="Calliope" onClick="return KeepCount()"> <label for="[Calliope]">Caliope</label><br>
 
-            <input type="checkbox" name="makeup" value="makeup">Makeup Party<br>
+            <input type="checkbox" name="makeup" value="makeup" onClick="return KeepCount()"><label for="[makeup]">Make Up Party</label><br>
 
-            <input type="checkbox" name="moth" value="moth">Moth Milieu<br>
+            <input type="checkbox" name="moth" value="moth" onClick="return KeepCount()"> <label for="[moth]">Moth Milieu</label><br>
 
-            <input type="checkbox" name="strawberry" value="strawberry">Vintage Strawberry<br>
+            <input type="checkbox" name="strawberry" value="strawberry"onClick="return KeepCount()"><label for="[strawberry]">Vintage Strawberry</label><br>
 
-            <input type="checkbox" name="tap" value="tap">Toe Tappers<br>
+            <input type="checkbox" name="tap" value="tap" onClick="return KeepCount()"><label for="[tap]">Toe Tappers</label><br>
           </div>
           <div class="form-submit">
-            <input type="image" src="resources/images/Asset1.png" alt="submit">
+            <input type="image" src="resources/images/Asset1.png" alt="submit" value="submit">
           </div>
         </div>
 
@@ -167,6 +170,37 @@
       </div>
     </footer>
 
+    <SCRIPT LANGUAGE="javascript">
+
+    function KeepCount() {
+
+    var NewCount = 0
+
+    if (document.joe.bigLove.checked)
+    {NewCount = NewCount + 1}
+
+    if (document.joe.Calliope.checked)
+    {NewCount = NewCount + 1}
+
+    if (document.joe.makeup.checked)
+    {NewCount = NewCount + 1}
+
+    if (document.joe.moth.checked)
+    {NewCount = NewCount + 1}
+
+    if (document.joe.strawberry.checked)
+    {NewCount = NewCount + 1}
+
+    if (document.joe.tap.checked)
+    {NewCount = NewCount + 1}
+
+    if (NewCount == 4)
+    {
+    alert('Pick Just Three Please')
+    document.joe; return false;
+    }
+    }
+    </SCRIPT>
 
   </body>
 </html>

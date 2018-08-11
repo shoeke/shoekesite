@@ -457,24 +457,25 @@ form {
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  margin-top: 1rem;
+  justify-content: space-between;
+  margin-top: 1.5rem;
 }
 
 input {
   height: 1.25rem;
 }
-input[type=image] {
-width: 162px;
-height: 60px;
-}
-input[type=image]:focus {
-  outline: none;
+
+input[type=image]{
+width: 45%;
+height: 100%;
+justify-content: center;
+outline: none;
 }
 
-input[type=text] {
+
+input[type=text], input[type=email] {
   font-size: 1rem;
-  padding: 1rem;
+  padding: .75rem;
 }
 
 label {
