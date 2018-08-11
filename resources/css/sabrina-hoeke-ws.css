@@ -516,7 +516,6 @@ justify-content: center;
 outline: none;
 }
 
-
 input[type=text], input[type=email] {
   font-size: 1rem;
   padding: .75rem;
@@ -549,8 +548,6 @@ input[name=newsletter]{
   -o-transform: scale(1.2); /* Opera */
     float: left;
 }
-
-
 
 .checklist label {
 display: inline-block;
