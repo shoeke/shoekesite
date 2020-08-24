@@ -61,6 +61,7 @@ nav {
   background: #fff;
   border-radius: 50%;
   display: none;
+  transition: all 800ms 1 ease-in;
 }
 .hb-box img {
   width: 100%;
@@ -704,6 +705,11 @@ color: #3F5170;
   line-height: .85rem;
 }
 
+/* HELPERS */
+.rotate {
+  transform: rotate(270deg);
+  transition: all 300ms ease-in-out;
+}
 
 /* * * * * MEDIA QUERIES * * * * */
 
