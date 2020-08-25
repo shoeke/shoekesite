@@ -159,17 +159,26 @@ nav ul li {
 
 
 footer {
-  background-image: url("../images/footer-05.png");
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("../images/bg-images/gold-striped-tile-xsm.png");
+  background-repeat: repeat;
+  background-size: 12px;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 110px 50px 15px 50px;
+  padding-bottom: 1em;
   font-family: 'Open Sans', sans-serif;
-
 }
+.footer-decor {
+  background-image: url(../images/bg-images/sunstar-04.png);
+  background-position: center;
+  background-size: 150px;
+  height: 150px;
+  position: relative;
+  top: -75px;
+  z-index: 5;
+  background-repeat: repeat-x;
+}
+
 .footer-contents {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
@@ -177,7 +186,9 @@ footer {
   grid-template-areas: "warn cr social";
   grid-gap: .75em;
   align-items: end;
-  margin-top: .75em;
+  margin: -75px auto 0;
+    justify-content: center;
+    width: 90%;
 }
 
 .icon-holder {
@@ -259,7 +270,7 @@ h6 {
 main p{
   width: 76%;
   max-width: 600px;
-  margin: .5rem auto 1.25rem auto;
+  margin: .5rem auto 3rem auto;
   line-height: 1.25rem;
 }
 
