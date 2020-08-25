@@ -12,13 +12,8 @@ $(document).ready(function(){
         $(".modal-menu").slideUp("slow");
     });
 
+    
+
+  });
 
   
-  });
-/*
-  $(".hb-box").click(function(e) {
-    $(this).addClass("animation");
-})
-.click(function(e){
-    $(".modal-menu").show();
-});*/
