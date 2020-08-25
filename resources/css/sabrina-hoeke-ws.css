@@ -160,38 +160,53 @@ nav ul li {
 
 footer {
   background-image: url("../images/footer-05.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 100px 25px 15px 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  padding: 110px 50px 15px 50px;
   font-family: 'Open Sans', sans-serif;
 
 }
+.footer-contents {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: 1fr;
+  grid-template-areas: "warn cr social";
+  grid-gap: .75em;
+  align-items: end;
+  margin-top: .75em;
+}
+
 .icon-holder {
-  width: 33.3%;
+  grid-area: social;
   display: flex;
   justify-content: flex-end;
+  align-self: flex-end;
 }
 
 .icon-box {
   width: 12%;
+  min-width: 45px;
   margin-left: 1.5em;
 }
 .icon-box img {
   width: 100%;
 }
 .footer-copy {
-  width: 33.3%;
   font-size: .65rem;
   line-height: 1.5;
+  align-self: end;
 }
-footer>p:nth-child(2) {
+.warn {
+  grid-area: warn;
+}
+.cr {
   text-align: center;
+  grid-area: cr;
 }
-
 
 q {
   font-style: italic;
@@ -783,8 +798,23 @@ color: #3F5170;
   main {
     padding: 1.5em .5em 2em;
   }
+  .footer-contents {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    grid-template-areas: " warn social"
+    "warn cr";
+    align-items: start;
+    margin-bottom: 1em;
+  }
+  .icon-holder {
+    justify-content: flex-end;
+  }
+  .cr {
+    text-align: right;
+  }
 }
 @media only screen and (max-width: 768px){
+
   div.placeholder-image {
     width: 90%;
   }
@@ -794,7 +824,6 @@ color: #3F5170;
   nav ul {
     display: none;
   }
- 
   header {
     align-items: flex-start;
   }
@@ -804,6 +833,24 @@ color: #3F5170;
   main {
     padding-top: 1em;
   }
+  .footer {
+    padding: 110px 10px 15px;
+  }
+  .footer-contents {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "social" 
+    "cr" "warn";
+    margin-bottom: 1em;
+  }
+  .footer-copy {
+    text-align: center;
+    justify-self: center;
+  }
+  .icon-holder {
+    justify-content: center;
+  }
+
 }
 
 @media only screen and (max-width: 568px){
@@ -850,6 +897,9 @@ color: #3F5170;
 }
   .slideControl button {
     width: 65%
+  }
+  main p {
+    width: 90%;
   }
 
 }
