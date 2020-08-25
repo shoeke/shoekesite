@@ -50,11 +50,54 @@ header {
   grid-column-gap: 10%;
   align-items: center;
 }
+/*-----------DESKTOP NAV---------------------*/
 nav {
   margin-bottom: 12%;
   display: inline-flex;
   justify-self: flex-end;
 }
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background-color:#fff;;
+  box-shadow: inset 2px 2px 4px rgba(93, 99, 104, 0.201);
+  border-radius: 5px;
+  padding-right: 1em;
+}
+nav ul li {
+  text-align: center;
+  padding: .4rem 0 .3rem;
+  margin-left: 1rem;
+}
+
+.buttons li {
+  font-size: .85rem;
+  font-weight: 600;
+  color: #3f5170;
+}
+
+.buttons li a:link, .buttons li a:visited  {
+  color: #3f5170;
+  text-decoration: none;
+}
+
+.buttons li a:hover {
+  color: #eb8f2b;
+}
+.buttons li:hover {
+  border-bottom: 2px solid #eb8f2b;
+}
+
+.buttons li ul {
+  display: none;
+  position: relative;
+  top: 0px;
+}
+
+
+/*-----------MOBILE NAV---------------------*/
 .hb-box {
   width: 50px;
   height: 50px;
@@ -66,16 +109,6 @@ nav {
 }
 .hb-box img {
   width: 100%;
-}
-nav ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  background-color:#fff;;
-  box-shadow: inset 2px 2px 4px rgba(93, 99, 104, 0.201);
-  border-radius: 5px;
-  padding-right: 1em;
 }
 
 .modal-menu {
@@ -120,49 +153,7 @@ nav ul {
   text-align: center;
 }
 
-nav ul li {
-  text-align: center;
-  padding: .4rem 0 .3rem;
-  margin-left: 1rem;
-}
 
-.buttons li {
-  font-size: .85rem;
-  font-weight: 600;
-  color: #3f5170;
-}
-
-.buttons li a:link, .buttons li a:visited  {
-  color: #3f5170;
-  text-decoration: none;
-}
-
-.buttons li a:hover {
-  color: #eb8f2b;
-}
-.buttons li:hover {
-  border-bottom: 2px solid #eb8f2b;
-}
-
-
-.buttons li ul {
-  display: none;
-  position: relative;
-  top: 0px;
-}
-
-ul.dropdown {
-  position: absolute;
-    display: none;
-}
-ul.dropdown li {
-  margin: 10px 0;
-}
-
-a.showme:hover + ul.dropdown,
-ul.dropdown:hover {
-  display: block !important;
-}
 
 /*----------------- FOOTER----------------------*/
 
@@ -755,8 +746,11 @@ color: #3F5170;
 .fade {
   opacity: 0;
 }
-.animation {
+.hb-out {
   animation: rotate-out 400ms 1 forwards;
+}
+.hb-in {
+  animation: reverse-rotate-in 400ms 1 forwards;
 }
 
 @keyframes rotate-out {
@@ -767,6 +761,16 @@ color: #3F5170;
   100% {
       transform: rotate(90deg);
       opacity: 0;
+  }
+}
+@keyframes reverse-rotate-in {
+  0% {
+      transform: rotate(-90deg);
+      opacity: 0;
+  }
+  100% {
+      transform: rotate(0deg);
+      opacity: 1;
   }
 }
 
