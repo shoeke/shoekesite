@@ -120,7 +120,7 @@ nav ul li {
   z-index: 99;
   top: 12vh;
   left: 0;
-  padding: 1em;
+  padding: 2em 1em;
   background: #f3eec6;
   box-shadow: 2px 0 8px #3f51704c;
 }
@@ -142,15 +142,28 @@ nav ul li {
 .menu-closeup {
   width: 1.25rem;
   height: 1.25rem;
-  border: 2px solid #e0d671;
+  background: #fff;
   border-radius: 2px;
+  padding: 2px;
 }
 .menu-closeup span {
   font-family: 'Josefin Slab', serif;
   font-size: 1.25rem;
   font-weight: 500;
   color: #3f5170;
+  vertical-align: sub;
   text-align: center;
+}
+/* Dark background for Modal*/
+.dark-bg {
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  position: fixed;
+  bottom:0vh;
+  left: 0;
+  background-color: rgba(62, 78, 87, 0.564);
+  display: none;
 }
 
 
@@ -911,6 +924,9 @@ color: #3F5170;
   }
   main p {
     width: 90%;
+  }
+  footer {
+    background-size: 9px;
   }
 
 }
