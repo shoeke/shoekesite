@@ -374,47 +374,39 @@ button:focus {
 }
 
 /*------------PORTFOLIO PAGES------------------*/
-div.gallery-wrapper {
+.gallery-wrapper {
   background-color: white;
   border: 3px solid #899ba3;
   border-radius: 35px;
   width: 90%;
   margin: 1rem auto;
-  padding: 1rem 0;
-}
-
-.gallery-row {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  flex-direction: row;
-  margin: 0 auto;
-  padding: 0;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
 }
 .gallery-pocket {
-  width: 30%;
-
-  height: 30%;
-
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-direction: row;
 }
+
+
 .gallery-pocket img {
   width: 100%;
   height: 100%;
   object-fit:contain;
   background-color: white;
   padding: .5rem;
-  margin: .5rem;
+  margin: .25rem;
 }
 
 .hover-title {
-position: absolute;
-float:left;
-background-color: rgba(255, 255, 255, .5);
+position: relative;
+background-color: rgba(255, 255, 255, 0.79);
 text-align: center;
-margin-top: 12rem;
+margin-top: -5rem;
+margin-left: 3%;
 padding: .5rem 1rem;
 border-radius: .3rem;
 z-index: 99;
@@ -427,15 +419,15 @@ font-size: .5rem;
 text-align: center;
 }
 
-.gallery-wrapper img {
+.gallery-pocket img {
     transition: transform .25s;
 }
-.gallery-wrapper img:hover {
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
+.gallery-pocket img:hover {
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
     box-shadow: .35rem .35rem .65rem rgba(63, 81, 112, .5);
   }
-.gallery-wrapper img:hover + .hover-title {
+.gallery-pocket img:hover + .hover-title {
       display: block;
   }
 
