@@ -36,13 +36,9 @@ main {
 
 
 header {
-  background-image: url("../images/header-03.png");
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  z-index: 2;
-  width: 100%;
-  margin: 0 auto;
+background-image: url("../images/header-sunstar-01.png");
+background-position: bottom center;
+
   padding: 0 25px ;
 
   display: grid;
@@ -308,7 +304,7 @@ div.placeholder-image {
   background-color: white;
   border: 3px solid #899ba3;
   border-radius: 35px;
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 0 auto;
   display: grid;
   grid-template-columns: 12% 76% 12%;
   grid-template-rows: 1fr;
@@ -350,6 +346,16 @@ div.placeholder-image {
 .placeholder-image img{
   width: 100%;
   background-color: white;
+}
+.slide-caption p{
+  font-style: italic;
+text-align: center;
+font-size: .85rem;
+}
+.slide-caption a {
+  color: #eb8f2b;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 button:focus {
@@ -849,8 +855,10 @@ color: #3F5170;
     display: none;
   }
   header {
+    background-image: url("../images/header-sunstar-adj-02.png");
     align-items: flex-start;
   }
+  
   nav {
     margin-top: 1em;
   }
@@ -878,13 +886,13 @@ color: #3F5170;
 }
 
 @media only screen and (max-width: 568px){
-  
+
   header {
-    background-position: bottom center;
-    height: auto;
-    min-height: 100px;
-    max-height: 150px;
+    background-image: url("../images/header-sunstar-adj-03.png");
+
   }
+  
+
   h1 {
     margin-bottom: 1rem;
   }
