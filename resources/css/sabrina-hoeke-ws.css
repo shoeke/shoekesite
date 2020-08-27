@@ -703,37 +703,43 @@ display: inline-block;
 /*-----------ABOUT ME PAGE--------------------*/
 
 .me-container {
-  display: -webkit-box;
-
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.image-holder, .me-about {
-
-  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 3px 2fr;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  padding: 3%;
+  width: 90%;
+  max-width: 1050px;
+  border: 2px solid #899BA3;
+  border-radius: 25px;
+  
+}
+.image-holder {
+  width: 75%;
+  min-width: 200px;
+  max-width: 350px;
+  justify-self: center;
+}
+.image-holder, .me-about {
+
+
 }
 
 .image-holder img {
-  width: 75%;
-  padding: 2rem;
-  border: 2px solid #899BA3;
-  border-radius: 25px;
-  margin-top: 2rem;
+  width: 100%;
+  border-radius: 15px;
+  
 }
-
-.me-about {
-  border-left: 3px solid #EB8F2B;
+.divider {
+  background: #ccba12;
+  height: 100%;
 }
 
 .me-about p {
   width: 100%;
   margin: 0;
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 1rem;
 }
 
 /*-----------LINKS PAGE-----------------------*/
@@ -890,6 +896,18 @@ color: #3F5170;
   .cr {
     text-align: right;
   }
+  .me-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 3px auto;
+  }
+  .image-holder {
+    width: 30%;
+    padding-bottom: 1rem;
+  }
+  .me-about p {
+    margin: 0 auto;
+  }
+  
 }
 @media only screen and (max-width: 768px){
 
@@ -936,6 +954,14 @@ color: #3F5170;
     min-width: 200px;
     grid-template-columns: 1fr;
   }
+  .gallery-row {
+    grid-template-columns: 49% 49% 0;
+    grid-auto-rows: auto;
+  }
+  .hover-title {
+    margin-top: -1rem;
+  }
+
 }
 
 @media only screen and (max-width: 568px){
@@ -944,8 +970,18 @@ color: #3F5170;
     background-image: url("../images/header-sunstar-adj-03.png");
 
   }
-  
-
+  p {
+    font-size: 19px;
+  }
+  main p {
+    line-height: 1.1rem;
+  }
+.me-about p {
+  padding: .5rem;
+}
+.me-container {
+  width: 95%;
+}
   h1 {
     margin-bottom: 1rem;
   }
@@ -991,6 +1027,13 @@ color: #3F5170;
   }
   .reg-page {
     width: 90%;
+  }
+  .gallery-row {
+    grid-template-columns: 98%;
+    grid-auto-rows: 0;
+  }
+  .hover-title {
+    margin-top: -1rem;
   }
 
 }

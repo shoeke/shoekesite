@@ -17,7 +17,9 @@ $('.row-remainder').css('display', 'none');
 
 $(".more-arrow").click(function(e){
     let that = $(this);
-    $(this).siblings(".gallery-wrapper").children(".row-remainder").slideToggle("slow");
+    let envelope = $(this).siblings(".gallery-wrapper").children(".row-remainder");
+    envelope.slideToggle("slow").css("grid-auto-rows", "auto");
+
     $(".arrow-holder", this).toggleClass("flip");
     if($(".arrow-holder", this).hasClass("flip")) {
         $(".more", this).fadeOut("fast", function(){
