@@ -240,7 +240,10 @@ h1, h2, h3 {
 h1 {
   font-size: 3rem;
   color: #3f5170;
-  margin-bottom: 2rem;
+  width: 50%;
+  padding-bottom: 1rem;
+  margin: 0 auto 2rem;
+  border-bottom: 3px solid #ccba12;
 }
 
 h2 {
@@ -256,9 +259,10 @@ h3 {
 
 h4 {
   font-family: 'Josefin Slab', serif;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #3f5170
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: #3f5170;
+  color: #eb8f2b;
 }
 
 h5 {
@@ -374,6 +378,16 @@ button:focus {
 }
 
 /*------------PORTFOLIO PAGES------------------*/
+.gallery-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery-section p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
 .gallery-wrapper {
   background-color: white;
   border: 3px solid #899ba3;
@@ -382,15 +396,21 @@ button:focus {
   margin: 1rem auto;
   padding: 1em;
   display: grid;
+  grid-template-columns: 1 fr;
+}
+.gallery-row {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
+}
+.row-remainder {
+  display: none;
 }
 .gallery-pocket {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 
 .gallery-pocket img {
   width: 100%;
