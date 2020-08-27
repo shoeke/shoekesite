@@ -517,6 +517,7 @@ div.shop-wrapper {
 
 .shop-links img{
   width: 100%;
+  border-radius: 7px;
 }
 
 .reg-page {
