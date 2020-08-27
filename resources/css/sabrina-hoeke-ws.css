@@ -351,7 +351,7 @@ div.placeholder-image {
   width: 100%;
   background-color: white;
 }
-.slide-caption p{
+.slide-caption p, .slide-caption span{
   font-style: italic;
 text-align: center;
 font-size: .85rem;
@@ -450,6 +450,20 @@ text-align: center;
 .gallery-pocket img:hover + .hover-title {
       display: block;
   }
+  .more-arrow {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow-holder {
+    width: 40px;
+    margin-right: .5em;
+  }
+  .arrow-holder img {
+    width: 100%;
+  }
+
+ 
 
 /*------------------ SHOP PAGE ---------------*/
 div.shop-wrapper {
