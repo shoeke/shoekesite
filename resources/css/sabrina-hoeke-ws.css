@@ -240,10 +240,7 @@ h1, h2, h3 {
 h1 {
   font-size: 3rem;
   color: #3f5170;
-  width: 50%;
-  padding-bottom: 1rem;
-  margin: 0 auto 2rem;
-  border-bottom: 3px solid #ccba12;
+  margin: 0 auto 1rem;
 }
 
 h2 {
@@ -258,11 +255,15 @@ h3 {
 }
 
 h4 {
-  font-family: 'Josefin Slab', serif;
-  font-size: 1.65rem;
-  font-weight: 600;
-  color: #3f5170;
-  color: #eb8f2b;
+  text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.65rem;
+    font-weight: 600;
+    width: 50%;
+    color: #eb8f2b;
+    padding-top: 2rem;
+    margin: 1rem auto 0;
+    border-top: 3px solid #ccba12;
 }
 
 h5 {

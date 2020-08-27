@@ -17,14 +17,14 @@ $('.illo-row-remainder').css('display', 'none');
 
 $(".more-arrow").click(function(e){
     $(".illo-row-remainder").slideToggle("slow");
-    $(".arrow-holder").toggleClass("flip");
-    if($(".more").is(':visible')) {
-        $(".more").fadeToggle("fast", function(){
-            $(".less").fadeToggle("slow");
+    $(".arrow-holder", this).toggleClass("flip");
+    if($(".more", this).is(':visible')) {
+        $(".more", this).fadeToggle("fast", function(){
+            $(".less", this).fadeToggle("slow");
         });
     }else{
-        $(".less").fadeToggle("fast", function(){
-            $(".more").fadeToggle("slow");
+        $(".less", this).fadeToggle("fast", function(){
+            $(".more", this).fadeToggle("slow");
         });
     }
 });
