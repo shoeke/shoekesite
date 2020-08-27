@@ -173,7 +173,7 @@ footer {
   background-size: 12px;
   width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 3rem auto 0;
   padding-bottom: 1em;
   font-family: 'Open Sans', sans-serif;
 }
@@ -284,7 +284,7 @@ h6 {
 main p{
   width: 76%;
   max-width: 600px;
-  margin: .5rem auto 3rem auto;
+  margin: .5rem auto;
   line-height: 1.25rem;
 }
 
