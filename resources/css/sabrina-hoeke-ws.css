@@ -210,6 +210,7 @@ footer {
 .icon-box {
   width: 12%;
   min-width: 45px;
+  max-width: 50px;
   margin-left: 1.5em;
 }
 .icon-box img {
@@ -489,9 +490,10 @@ text-align: center;
  
 
 /*------------------ SHOP PAGE ---------------*/
-div.shop-wrapper {
-  display: flex;
-  flex-direction: column;
+.shop-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
   justify-content: center;
   align-items: center;
   width: 70%;
@@ -499,30 +501,22 @@ div.shop-wrapper {
   margin: 0 auto;
 }
 
-.shop-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  padding: .5rem 1rem;
-}
-
-.shop-links a {
-  width: 50%;
-  margin: 1rem;
-}
-
 .shop-links img{
   width: 100%;
   border-radius: 7px;
+  transition: transform 400ms ease-in-out;
+}
+.shop-links {
+  
+}
+.shop-links img:hover {
+  transform: scale(1.15);
+  box-shadow: .35rem .35rem .65rem rgba(63, 81, 112, .5);
 }
 
 .reg-page {
   margin: 0 auto 1rem auto;
-  width: 50%;
+  width: 70%;
   text-align: center;
 }
 
@@ -936,7 +930,12 @@ color: #3F5170;
   .icon-holder {
     justify-content: center;
   }
-
+  .shop-wrapper {
+    width: 50%;
+    max-width: 250px;
+    min-width: 200px;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media only screen and (max-width: 568px){
@@ -989,6 +988,9 @@ color: #3F5170;
   }
   footer {
     background-size: 9px;
+  }
+  .reg-page {
+    width: 90%;
   }
 
 }
