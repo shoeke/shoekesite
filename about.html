@@ -2,10 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>About Me</title>
+    <title>Sabrina Hoeke</title>
 
     <meta name="description" content="Sabrina Hoeke is an illustrator and Surface Pattern Designer bringing color and a hand-drawn quality to her designs">
     <meta name="keywords" content="illustration, surface pattern design, hand-drawn, fabric, wonky">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
     <link rel="stylesheet" href="resources/css/reset.css">
@@ -16,44 +17,40 @@
     <link rel="stylesheet" href="resources/css/sabrina-hoeke-ws.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   </head>
 
   <body>
     <div class="wrapper">
 
 <!-- HEADER -->
-    <header>
+      <header>
+      <!-- LOGO -->
+<div class="logo-holder">
+  <a href="index.html"> <img src="resources/images/ws-logo-04.png" alt="Sabrina Hoeke aka Mubbles logo"  ></a>
+</div>
+
       <nav>
+        <div class="hb-box">
+          <img src="resources/images/hamburger-lt-01.svg" alt="">
+        </div>
+
         <ul class="buttons">
-          <li><a href="index.html" title="Return to Home Page">Home</a></li>
-
-          <li>
-            <a class="showme" href="#">Portfolio</a>
-            <ul class="dropdown">
-        <li><a href="patterns.html">Patterns</a></li>
-        <li><a href="illo.html">Illustrations</a></li>
-        <li><a href="graphic.html">Graphics</a></li>
-            </ul>
-          </li>
-
-          <li><a href="about.html" title="Navigate to About Me Page">About Me</a></li>
+          <li><a href="portfolio.html" title="Navigate to Portfolio Page">Portfolio</a></li>
+          <li><a href="about.html" title="Navigate to About Me Page">About</a></li>
           <li><a href="shop.html" title="Navigate to Shop Page">Shop</a></li>
           <li><a href="freebies.html" title="Navigate to Freebies Page">Freebies</a></li>
           <li><a href="links.html" title="Navigate to Links Page">Links</a></li>
         </ul>
 
       </nav>
-    </header>
-
-<!-- LOGO -->
-<div class="logo-holder">
-  <a href="index.html"> <img src="resources/images/ws-logo-04.png" alt="Sabrina Hoeke aka Mubbles logo" width="241" height="247" ></a>
-</div>
+      </header>
 
     <!-- MAIN -->
-    <main>
+      <main>
+      <div class="dark-bg"></div>
       <h1>About Me</h1>
-
       <div class="me-container">
 
         <div class= "image-holder">
@@ -68,31 +65,57 @@
 
     </div>
 
-    </main>
+
+
+
+
+
+      </main>
 
     <!-- FOOTER -->
-
-      <div class="push"></div>
-  </div> <!--CLOSE WRAPPER-->
-
     <footer>
-      <div id="copy-holder">
-
-      <p>&copy; 2018 Sabrina Hoeke<br>
-       All Rights Reserved.</p>
-      <p>Please do not copy or save any images <br> without my express, written permission!<br><q> “Don’t be all, like, uncool!” &mdash; Luann De Lesseps</q></p>
+      <div class="footer-decor"></div>
+      <div class="footer-contents">
+        <p class="footer-copy warn">Please do not copy or save any images <br> without my express, written permission!<br><q> “Don’t be all, like, uncool!” &mdash; Luann De Lesseps</q></p>
+      
+        <p class="footer-copy cr">&copy; 2018–2020 Sabrina&nbsp;Hoeke All&nbsp;Rights&nbsp;Reserved.</p>
+  
+        <div class="icon-holder">
+          <div class="icon-box">
+            <a href="https://www.instagram.com/a.k.a._mubbles/" title="Instagram" target="_blank"><img src="resources/images/icon-ig.svg" alt="Instagram icon"></a>
+          </div>
+  
+          <div class="icon-box">
+            <a href="https://www.pinterest.com/sabrinahoeke/" title="Pinterest" target="_blank"><img src="resources/images/icon-pinterest.svg" alt="Pinterest icon"></a>
+          </div>
+  
+          <div class="icon-box">
+            <a href="mailto:design@sabrinahoeke.com" title="Email Me" ><img src="resources/images/icon-email.svg" alt="Email Me"></a>
+          </div>
+        </div>
       </div>
 
-      <div id="icon-holder">
-
-      <a href="https://www.instagram.com/a.k.a._mubbles/" title="Instagram" target="_blank"><img src="resources/images/icon-ig.svg" alt="Instagram icon" width="65" height="65"></a>
-
-      <a href="https://www.pinterest.com/sabrinahoeke/" title="Pinterest" target="_blank"><img src="resources/images/icon-pinterest.svg" alt="Pinterest icon" width="65" height="65"></a>
-
-      <a href="mailto:sabrina.hoeke@yahoo.com" title="Email Me" ><img src="resources/images/icon-email.svg" alt="Email Me" width="65" height="65"></a>
-
-      </div>
     </footer>
 
+  </div> <!--CLOSE WRAPPER-->
+  
+  <section class="modal-menu">
+    <div class="menu-closeup">
+      <span>X</span>
+    </div>
+    <ul class="buttons">
+      <li>
+        <a class="showme" href="#">Portfolio</a>
+      </li>
+      <li><a href="about.html" title="Navigate to About Me Page">About</a></li>
+      <li><a href="shop.html" title="Navigate to Shop Page">Shop</a></li>
+      <li><a href="freebies.html" title="Navigate to Freebies Page">Freebies</a></li>
+      <li><a href="links.html" title="Navigate to Links Page">Links</a></li>
+    </ul>
+
+  </section>
+
+
+  <script src="behave.js"></script>
   </body>
 </html>
