@@ -351,7 +351,7 @@ div.placeholder-image {
   width: 100%;
   background-color: white;
 }
-.slide-caption p, .slide-caption span{
+.slide-caption p{
   font-style: italic;
 text-align: center;
 font-size: .85rem;
@@ -403,8 +403,8 @@ button:focus {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
 }
-.row-remainder {
-  display: none;
+.illo-row-remainder {
+  display: grid;
 }
 .gallery-pocket {
   display: flex;
@@ -451,16 +451,38 @@ text-align: center;
       display: block;
   }
   .more-arrow {
-   display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+  }
+
+  .more-arrow:hover {
+    cursor: pointer;
+  }
+  .more-arrow:hover > .arrow-holder {
+    border: 1px solid #3f5170;
   }
   .arrow-holder {
     width: 40px;
-    margin-right: .5em;
+    height: 40px;
+    margin-left: .5em;
+    border-radius: 50%;  
   }
   .arrow-holder img {
     width: 100%;
+    transform: rotate(180deg);
+  }
+  .more, .less {
+    font-style: italic;
+    text-align: right;
+    font-size: .85rem;
+  }
+  .more {
+    display: inline-block;
+  }
+  .less {
+    display: none;
   }
 
  
@@ -814,6 +836,9 @@ color: #3F5170;
 .rotate {
   transform: rotate(270deg);
 }
+.flip {
+  transform: rotate(180deg);
+}
 .fade {
   opacity: 0;
 }
@@ -844,6 +869,7 @@ color: #3F5170;
       opacity: 1;
   }
 }
+
 
 /* * * * * MEDIA QUERIES * * * * */
 
