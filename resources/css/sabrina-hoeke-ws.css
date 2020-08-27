@@ -404,7 +404,7 @@ button:focus {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
 }
-.illo-row-remainder {
+.row-remainder {
   display: grid;
 }
 .gallery-pocket {

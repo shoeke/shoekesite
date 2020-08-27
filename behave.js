@@ -12,19 +12,20 @@ $(document).ready(function(){
         $(".modal-menu").slideUp("slow");
     });
 /*keep hidden section as display:grid in css and add "none" on page load to avoid slideDown defaulting to display: block*/
-$('.illo-row-remainder').css('display', 'none');
+$('.row-remainder').css('display', 'none');
 
 
 $(".more-arrow").click(function(e){
-    $(".illo-row-remainder").slideToggle("slow");
+    let that = $(this);
+    $(this).siblings(".gallery-wrapper").children(".row-remainder").slideToggle("slow");
     $(".arrow-holder", this).toggleClass("flip");
-    if($(".more", this).is(':visible')) {
-        $(".more", this).fadeToggle("fast", function(){
-            $(".less", this).fadeToggle("slow");
+    if($(".arrow-holder", this).hasClass("flip")) {
+        $(".more", this).fadeOut("fast", function(){
+            $(".less", that).fadeIn("slow");
         });
     }else{
-        $(".less", this).fadeToggle("fast", function(){
-            $(".more", this).fadeToggle("slow");
+        $(".less", this).fadeOut("fast", function(){
+            $(".more", that).fadeIn("slow");
         });
     }
 });
