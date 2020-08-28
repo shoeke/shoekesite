@@ -403,7 +403,7 @@ button:focus {
 .gallery-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: 1fr;
 }
 .row-remainder {
   display: grid;
@@ -850,6 +850,9 @@ color: #3F5170;
 .hb-in {
   animation: reverse-rotate-in 400ms 1 forwards;
 }
+.row-expand {
+  grid-auto-rows: auto !important;
+}
 
 @keyframes rotate-out {
   0% {
@@ -955,8 +958,8 @@ color: #3F5170;
     grid-template-columns: 1fr;
   }
   .gallery-row {
-    grid-template-columns: 49% 49% 0;
-    grid-auto-rows: auto;
+    grid-template-columns: 49% 49%;
+    grid-auto-rows: 0;
   }
   .hover-title {
     margin-top: -1rem;

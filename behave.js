@@ -11,16 +11,15 @@ $(document).ready(function(){
         $(".dark-bg").fadeOut("slow");
         $(".modal-menu").slideUp("slow");
     });
-/*keep hidden section as display:grid in css and add "none" on page load to avoid slideDown defaulting to display: block*/
-$('.row-remainder').css('display', 'none');
-
+/*bc default for grid is grid-auto-rows: auto, set to 0 to hide additional images and toggle helper class .row-expand */
+$(".gallery-row").css("grid-auto-rows", "0");
 
 $(".more-arrow").click(function(e){
     let that = $(this);
-    let envelope = $(this).siblings(".gallery-wrapper").children(".row-remainder");
-    envelope.slideToggle("slow").css("grid-auto-rows", "auto");
-
-    $(".arrow-holder", this).toggleClass("flip");
+    let envelope = $(this).siblings(".gallery-wrapper").children(".gallery-row");
+    
+    envelope.toggleClass("row-expand");
+       $(".arrow-holder", this).toggleClass("flip");
     if($(".arrow-holder", this).hasClass("flip")) {
         $(".more", this).fadeOut("fast", function(){
             $(".less", that).fadeIn("slow");
