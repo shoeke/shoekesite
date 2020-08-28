@@ -13,38 +13,79 @@ html, body {
 
 .wrapper {
   background-image: url("../images/BGgridArtboard 1 copy@0.4x.jpg");
-  
   max-width: 1280px;
   margin: 0 auto;
-/*
-  margin: 0 auto -201px; /* the bottom margin is the negative value of the footer's height */
 }
 
 main {
   padding: 2em 1em 3em;
 }
-
-.logo-holder {
-  max-width: 190px;
-  min-width: 158px;
-    margin-top: 15px;
+/*---------------GLOBAL HEADINGS----------------*/
+h1, h2, h3 {
+  font-family:'Amatic SC', cursive;
+  text-align: center;
 }
-.logo-holder img {
-  width: 100%;
+
+h1 {
+  font-size: 3rem;
+  color: #3f5170;
+  margin: 0 auto 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #eb8f2b
+}
+
+h3 {
+  font-size: 2rem;
+  color: #3f5170;
+  margin-top: 1rem;
+}
+
+h4 {
+  text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.65rem;
+    font-weight: 600;
+    width: 50%;
+    color: #eb8f2b;
+    padding-top: 2rem;
+    margin: 1rem auto 0;
+    border-top: 3px solid #ccba12;
+    box-shadow: inset 0 3px 4px -4px rgba(63, 81, 112, .5);
+}
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: .75rem;
+  font-weight: 600;
+  color: #3f5170;
+}
+
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: .5rem;
+  font-weight: 400;
+  font-style: italic;
 }
 /*-----------HEADER---------------------*/
-
-
 header {
-background-image: url("../images/header-sunstar-01.png");
-background-position: bottom center;
-
+  background-image: url("../images/header-sunstar-01.png");
+  background-position: bottom center;
   padding: 0 25px ;
-
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 10%;
   align-items: center;
+}
+.logo-holder {
+  max-width: 190px;
+  min-width: 158px;
+  margin-top: 15px;
+}
+.logo-holder img {
+  width: 100%;
 }
 /*-----------DESKTOP NAV---------------------*/
 nav {
@@ -91,7 +132,6 @@ nav ul li {
   position: relative;
   top: 0px;
 }
-
 
 /*-----------MOBILE NAV---------------------*/
 .hb-box {
@@ -161,12 +201,7 @@ nav ul li {
   background-color: rgba(62, 78, 87, 0.564);
   display: none;
 }
-
-
-
 /*----------------- FOOTER----------------------*/
-
-
 footer {
   background-image: url("../images/bg-images/gold-striped-tile-xsm.png");
   background-repeat: repeat;
@@ -232,54 +267,7 @@ footer {
 q {
   font-style: italic;
 }
-/*---------------GLOBAL HEADINGS----------------*/
-h1, h2, h3 {
-  font-family:'Amatic SC', cursive;
-  text-align: center;
-}
 
-h1 {
-  font-size: 3rem;
-  color: #3f5170;
-  margin: 0 auto 1rem;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #eb8f2b
-}
-
-h3 {
-  font-size: 2rem;
-  color: #3f5170;
-  margin-top: 1rem;
-}
-
-h4 {
-  text-align: center;
-    font-family: 'Josefin Slab', serif;
-    font-size: 1.65rem;
-    font-weight: 600;
-    width: 50%;
-    color: #eb8f2b;
-    padding-top: 2rem;
-    margin: 1rem auto 0;
-    border-top: 3px solid #ccba12;
-}
-
-h5 {
-  font-family: "Open Sans", sans-serif;
-  font-size: .75rem;
-  font-weight: 600;
-  color: #3f5170;
-}
-
-h6 {
-  font-family: "Open Sans", sans-serif;
-  font-size: .5rem;
-  font-weight: 400;
-  font-style: italic;
-}
 
 /*--------------HOME PAGE --------------------*/
 main p{
@@ -288,7 +276,6 @@ main p{
   margin: .5rem auto;
   line-height: 1.25rem;
 }
-
 main p .start {
   font-size: 1.5rem;
   font-weight: 600;
@@ -328,9 +315,6 @@ div.placeholder-image {
 
 .mySlides img {
   width: 60%%;
-  /*
-  width: 570px;
-  height: 360px;*/
 }
 
 .slideControl {
@@ -397,7 +381,6 @@ button:focus {
   width: 90%;
   margin: 1rem auto;
   padding: 1em;
-
 }
 .gallery-row {
   display: grid;
@@ -423,21 +406,21 @@ button:focus {
 }
 
 .hover-title {
-position: relative;
-background-color: rgba(255, 255, 255, 0.79);
-text-align: center;
-margin-top: -5rem;
-margin-left: 3%;
-padding: .5rem 1rem;
-border-radius: .3rem;
-z-index: 99;
-display: none;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.79);
+  text-align: center;
+  margin-top: -5rem;
+  margin-left: 3%;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  z-index: 99;
+  display: none;
 }
 
 .all-rights {
-font-style: italic;
-font-size: .5rem;
-text-align: center;
+  font-style: italic;
+  font-size: .5rem;
+  text-align: center;
 }
 
 .gallery-pocket img {
@@ -486,8 +469,6 @@ text-align: center;
     display: none;
   }
 
- 
-
 /*------------------ SHOP PAGE ---------------*/
 .shop-wrapper {
   display: grid;
@@ -505,9 +486,7 @@ text-align: center;
   border-radius: 7px;
   transition: transform 400ms ease-in-out;
 }
-.shop-links {
-  
-}
+
 .shop-links img:hover {
   transform: scale(1.15);
   box-shadow: .35rem .35rem .65rem rgba(63, 81, 112, .5);
@@ -518,186 +497,6 @@ text-align: center;
   width: 70%;
   text-align: center;
 }
-
-table {
-  width: 100%;
-  margin: 0 auto;
-  border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid black;
-    padding: .5rem;
-    min-width: 10%;
-    max-width: 70%;
-}
-
-th    {
-  font-weight: 600;
-  background-color: #b8c3c8;
-  white-space: nowrap;
-}
-/*-----------FREEBIES PAGE ------------------*/
-#wallpaper-6 {
-  padding-bottom: .5rem;
-  border-bottom: .1rem solid #eb8f2b;
-}
-
-.grid {
-
-  display: -ms-flexbox;
-  display: grid;
-
-  height: auto;
-  width: 100%;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 1rem;
-  padding: 3rem 1.5rem;
-  background-color: white;
-  border-bottom: .1rem solid #eb8f2b;
-}
-
-.box {
-  display: block;
-  background-color: #dae3e4;
-  border-radius: .5rem;
-}
-
-.box img {
-  background-color: #dae3e4;
-  width: 100%;
-  padding: 10px;
-}
-
-.box img:hover {
-    transform: scale(2);
-    box-shadow: .35rem .35rem .65rem rgba(63, 81, 112, .5);
-  }
-
-figcaption {
-  font-style: italic;
-  text-align: center;
-  font-size: .75rem;
-  font-weight: 600;
-  padding-bottom: .5rem;
-}
- /*-----------FORM------------------------------------*/
-.form-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
-}
-
-.left-side {
-  display: flex;
-  width: 50%;
-  height: 100%;
-  padding: 1rem;
-  background-color: #F3EEC6;
-  border-right: .1rem solid #eb8f2b;
-}
-form {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.form-one {
-  font-size: .85rem;
-  font-weight: 600;
-}
-.form-one, .form-two {
-  width: 45%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.checklist {
-  width: 100%;
-  height: auto;
-  font-style: italic;
-  font-weight: 600;
-  font-size: .85rem;
-}
-
-.form-submit {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 1.5rem;
-}
-
-input {
-  height: 1.25rem;
-}
-
-input[type=image]{
-width: 45%;
-height: 100%;
-justify-content: center;
-outline: none;
-}
-
-input[type=text], input[type=email] {
-  font-size: .75rem;
-  padding: .25rem;
-}
-
-label {
-  font-size: 1rem;
-  margin-bottom: .25rem;
-  font-weight: 600;
-}
-
-select {
-  height: 2rem;
-  font-size: 1rem;
-}
-
-input[type=checkbox] {
-  vertical-align: bottom;
-  -ms-transform: scale(2); /* IE */
-  -moz-transform: scale(2); /* FF */
-  -webkit-transform: scale(2); /* Safari and Chrome */
-  -o-transform: scale(2); /* Opera */
-  margin-right: 1rem;
-  margin-top:15px;
-  border-bottom: 1px solid black;
-}
-input[name=newsletter]{
-  -ms-transform: scale(1.2); /* IE */
-  -moz-transform: scale(1.2); /* FF */
-  -o-transform: scale(1.2); /* Opera */
-    float: left;
-}
-
-.checklist label {
-display: inline-block;
-}
-
-.right-side {
-  display: flex;
-  width: 50%;
-  height: auto;
-}
-
-.right-side p {
-  width: 75%;
-  padding: 2rem;
-  margin: 0;
-}
-
-.right-side p span {
-  font-weight: 600;
-}
-
 
 /*-----------ABOUT ME PAGE--------------------*/
 
@@ -712,24 +511,20 @@ display: inline-block;
   max-width: 1050px;
   border: 2px solid #899BA3;
   border-radius: 25px;
-  
 }
+
 .image-holder {
   width: 75%;
   min-width: 200px;
   max-width: 350px;
   justify-self: center;
 }
-.image-holder, .me-about {
-
-
-}
 
 .image-holder img {
   width: 100%;
   border-radius: 15px;
-  
 }
+
 .divider {
   background: #ccba12;
   height: 100%;
@@ -745,23 +540,60 @@ display: inline-block;
 .link-category {
   margin-bottom: 2rem;
 }
+.link-category h4 {
+  box-shadow: inset 0 ;
+}
 
 .grid-container {
   width: 80%;
-
-  display: -ms-flexbox;
-
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
+  grid-template-areas: "pic name about";
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: .60rem;
-  border-bottom: 4px solid #ccba12;
+  padding: 1em;
+  border-bottom: 3px solid #ccba12;
 }
-
+.pic {
+  grid-area: pic;
+}
+.name {
+  grid-area: name;
+}
+.about {
+  grid-area: about;
+}
 .grid-container:first-child {
   border-top: 4px solid #ccba12;
+}
+/* color changes for classes section*/
+.classes h4 {
+  color: #ccba12;
+}
+/* color changes for artist section*/
+.artists .grid-container  {
+  border-bottom: 3px solid #eb8f2b;
+}
+.artists .grid-container:first-child  {
+  border-top: 3px solid #eb8f2b;
+}
+.artists h4 {
+  color: #eb8f2b;
+  border-top-color: #eb8f2b;
+}
+
+/* color changes for inspiration section*/
+.inspire .grid-container  {
+  border-bottom: 3px solid #3f5170;
+}
+.inspire .grid-container:first-child  {
+  border-top: 3px solid #3f5170;
+}
+.inspire h4 {
+  color: #3f5170;
+  border-top-color: #3f5170;
 }
 
 .grid-item {
@@ -816,13 +648,13 @@ display: inline-block;
 .name p, .name a {
   width: inherit;
   margin: inherit;
-font-size: .8rem;
-line-height: 1.25rem;
-font-weight: 600;
-height: 100%;
-text-align: center;
-text-decoration: none;
-color: #3F5170;
+  font-size: .8rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #3F5170;
 }
 
 .about p {
@@ -965,15 +797,16 @@ color: #3F5170;
     min-width: 200px;
     grid-template-columns: 1fr;
   }
-  
-
+  .grid-container {
+    grid-template-columns: 1.5fr 2.5fr;
+    grid-template-areas: "pic about" "name name";
+  }
 }
 
 @media only screen and (max-width: 568px){
 
   header {
     background-image: url("../images/header-sunstar-adj-03.png");
-
   }
   p {
     font-size: 19px;
@@ -981,11 +814,11 @@ color: #3F5170;
   main p {
     line-height: 1.1rem;
   }
-.me-about p {
-  padding: .5rem;
+  .me-about p {
+    padding: .5rem;
 }
-.me-container {
-  width: 95%;
+  .me-container {
+    width: 95%;
 }
   h1 {
     margin-bottom: 1rem;
@@ -1015,14 +848,14 @@ color: #3F5170;
   .slideControl {
     margin:5px 0;
   }
-.right-arrow {
-  justify-self: end;
+  .right-arrow {
+    justify-self: end;
 }
-.back-arrow {
-  justify-self: start;
+  .back-arrow {
+    justify-self: start;
 }
   .slideControl button {
-    width: 65%
+      width: 65%
   }
   main p {
     width: 90%;
@@ -1043,9 +876,6 @@ color: #3F5170;
   .hover-title {
     margin-top: -1rem;
   }
-  .row-expand {
-  }
-
 }
 @media only screen and (max-width: 360px){
   .gallery-wrapper {
