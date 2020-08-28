@@ -397,8 +397,7 @@ button:focus {
   width: 90%;
   margin: 1rem auto;
   padding: 1em;
-  display: grid;
-  grid-template-columns: 1 fr;
+
 }
 .gallery-row {
   display: grid;
@@ -854,6 +853,8 @@ color: #3F5170;
   grid-auto-rows: auto !important;
 }
 
+
+
 @keyframes rotate-out {
   0% {
       transform: rotate(0deg);
@@ -910,6 +911,13 @@ color: #3F5170;
   .me-about p {
     margin: 0 auto;
   }
+  .gallery-row {
+    grid-template-columns: 49% 49%;
+    grid-auto-rows: 0;
+  }
+  .hover-title {
+    margin-top: -1rem;
+  }
   
 }
 @media only screen and (max-width: 768px){
@@ -957,13 +965,7 @@ color: #3F5170;
     min-width: 200px;
     grid-template-columns: 1fr;
   }
-  .gallery-row {
-    grid-template-columns: 49% 49%;
-    grid-auto-rows: 0;
-  }
-  .hover-title {
-    margin-top: -1rem;
-  }
+  
 
 }
 
@@ -1031,6 +1033,9 @@ color: #3F5170;
   .reg-page {
     width: 90%;
   }
+  .gallery-wrapper {
+    width: 80%;
+  }
   .gallery-row {
     grid-template-columns: 98%;
     grid-auto-rows: 0;
@@ -1038,5 +1043,12 @@ color: #3F5170;
   .hover-title {
     margin-top: -1rem;
   }
+  .row-expand {
+  }
 
+}
+@media only screen and (max-width: 360px){
+  .gallery-wrapper {
+    width: 95%;
+  }
 }
