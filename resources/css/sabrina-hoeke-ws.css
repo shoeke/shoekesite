@@ -537,11 +537,21 @@ button:focus {
 }
 
 /*-----------LINKS PAGE-----------------------*/
+.sun-holder {
+  width: 10%;
+  margin: 0 auto -4.5vw;
+}
+.sun-holder img {
+  width: 100%;
+}
+
 .link-category {
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 .link-category h4 {
   box-shadow: inset 0 ;
+  margin-top: 0;
 }
 
 .grid-container {
@@ -549,6 +559,7 @@ button:focus {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-template-areas: "pic name about";
+  grid-gap: 1.5em;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -556,8 +567,12 @@ button:focus {
   padding: 1em;
   border-bottom: 3px solid #ccba12;
 }
-.pic {
+ .pic {
   grid-area: pic;
+  background-position: center;
+}
+.grid-item > .pic {
+  justify-self: center;
 }
 .name {
   grid-area: name;
@@ -571,6 +586,7 @@ button:focus {
 /* color changes for classes section*/
 .classes h4 {
   color: #ccba12;
+
 }
 /* color changes for artist section*/
 .artists .grid-container  {
@@ -594,17 +610,6 @@ button:focus {
 .inspire h4 {
   color: #3f5170;
   border-top-color: #3f5170;
-}
-
-.grid-item {
-  width: 100%;
-  margin: .5rem;
-}
-
-.empty-div {
-  width: 100%;
-  min-height: 5rem;
-  z-index: 10;
 }
 
 #miid, #dpc, #mats, #dg, #sfc, #omw, #lgi, #rds, #ss, #cpt, #sf {
@@ -658,7 +663,7 @@ button:focus {
 }
 
 .about p {
-  width: 90%;
+  width: 100%;
   height: auto;
   margin: inherit;
   padding: 0;
@@ -800,6 +805,12 @@ button:focus {
   .grid-container {
     grid-template-columns: 1.5fr 2.5fr;
     grid-template-areas: "pic about" "name name";
+    width: 90%;
+    grid-gap: 2em;
+  }
+  .sun-holder {
+    width: 15%;
+    margin: 0 auto -6.5vw;
   }
 }
 
@@ -875,6 +886,19 @@ button:focus {
   }
   .hover-title {
     margin-top: -1rem;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 125px;
+    grid-template-areas: "pic" "name" "about";
+    width: 95%;
+  }
+  .about p {
+    line-height: 1.3;
+    text-align: center;
+  }
+  .pic {
+    padding: .75em 2em;
   }
 }
 @media only screen and (max-width: 360px){
